@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedra, Papel e Tesoura</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="@@ENDERECO_DO_CSS">
+</head>
+<body>
+
+  <div class="botoes">
+    
+    <div class="pedra">
+      <button onclick="pedra()"><img src="images/rock.svg" alt="Pedra"></button>
+    </div>
+  
+    <div class="papel">
+      <button onclick="papel()"><img src="images/paper.svg" alt="Papel"></button>
+    </div>
+  
+    <div class="tesoura">
+      <button onclick="tesoura()"><img src="images/scissors.svg" alt="Tesoura"></button>
+    </div>
+  </div>
+
+
+  <div class="resultados">
+    <p id="computador">Computador >>> <span id="resposta"></span></p>
+    <div id="placar"></div>
+    <div id="resultado"></div>
+  </div>
+
+  <script src="@@ENDERECO_DO_JS"></script>
+</body>
+</html>

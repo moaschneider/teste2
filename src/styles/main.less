@@ -1,0 +1,64 @@
+@fontePrincipal: 'Space Mono', monospace;
+
+@corDeFundo: whitesmoke;
+@corVitoria: green;
+@corDerrota: red;
+@corEmpate: orange;
+
+body {
+    font-family: @fontePrincipal;
+    font-size: 18px;
+    background-color: @corDeFundo;
+  }
+
+  .botoes {
+    margin: 80px auto;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+
+    button {
+      padding: 12px 20px;
+      background-color: transparent;
+      border: none;
+    }
+
+    img {
+      height: 120px;
+    }
+  }
+
+  .resultados {
+    margin: 50px auto;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+
+    p {
+      display: none;
+    }
+  }
+
+  #resultado {
+    font-size: 50px;
+    line-height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .vitoria {
+      color: @corVitoria;
+    }
+
+    .derrota {
+      color: @corDerrota;
+    }
+
+    .empate {
+      color: @corEmpate;
+    }
+  }
